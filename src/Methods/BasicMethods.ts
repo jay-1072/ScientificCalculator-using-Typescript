@@ -46,8 +46,6 @@ export class basicService {
         tempObj.checkedCnt = 0;
     }
 
-    /*****************************************************************Display on Screen************************/
-
     display = (val: string): void => {
         if (checkForError()) {
             let oldOperator = dis.value.slice(-1);
@@ -73,8 +71,6 @@ export class basicService {
             }
         }
     }
-
-    /*****************************************************************Factorial************************/
 
     factorial = (): void => {
 
@@ -105,15 +101,11 @@ export class basicService {
         }
     }
 
-    /*****************************************************************plus-minus ************************/
-
     plusminus = (): void => {
         if (checkForError()) {
             dis.value = (parseFloat(dis.value) > 0) ? (0 - parseFloat(dis.value)).toString() : (Math.abs(parseFloat(dis.value))).toString();
         }
     }
-
-    /*****************************************************************inverse************************/
 
     inverse = (): void => {
         if (checkForError()) {
@@ -128,16 +120,12 @@ export class basicService {
         }
     }
 
-    /*****************************************************************Exponential************************/
-
     expo = (): void => {
         if (checkForError()) {
             const fE = dis.value != Empty ? parseFloat(dis.value) : 0;
             dis.value = fE.toExponential();
         }
     }
-
-    /*****************************************************************answer************************/
 
     answer = (): void => {
         if (checkForError()) {

@@ -42,7 +42,6 @@ export class basicService {
             btncheck.style.backgroundColor = WHITE_COLOR;
             tempObj.checkedCnt = 0;
         };
-        /*****************************************************************Display on Screen************************/
         this.display = (val) => {
             if (checkForError()) {
                 let oldOperator = dis.value.slice(-1);
@@ -66,7 +65,6 @@ export class basicService {
                 }
             }
         };
-        /*****************************************************************Factorial************************/
         this.factorial = () => {
             if (checkForError()) {
                 dis.value = op.includes(dis.value.slice(-1)) ? dis.value.slice(0, -1) : dis.value;
@@ -90,13 +88,11 @@ export class basicService {
                 }
             }
         };
-        /*****************************************************************plus-minus ************************/
         this.plusminus = () => {
             if (checkForError()) {
                 dis.value = (parseFloat(dis.value) > 0) ? (0 - parseFloat(dis.value)).toString() : (Math.abs(parseFloat(dis.value))).toString();
             }
         };
-        /*****************************************************************inverse************************/
         this.inverse = () => {
             if (checkForError()) {
                 upper.value = '1/(' + dis.value + ')=';
@@ -109,14 +105,12 @@ export class basicService {
                 }
             }
         };
-        /*****************************************************************Exponential************************/
         this.expo = () => {
             if (checkForError()) {
                 const fE = dis.value != Empty ? parseFloat(dis.value) : 0;
                 dis.value = fE.toExponential();
             }
         };
-        /*****************************************************************answer************************/
         this.answer = () => {
             if (checkForError()) {
                 let error = Empty;

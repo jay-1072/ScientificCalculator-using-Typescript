@@ -42,8 +42,6 @@ export class secondFunService {
         }
     }
 
-    /*****************************************************************10^x and 2^x ************************/
-
     tentox = (): void => {
         if (checkForError()) {
             if (_tenpow.innerHTML == TENTOX) {
@@ -56,8 +54,6 @@ export class secondFunService {
             }
         }
     }
-
-    /*****************************************************************10^x and 2^x ************************/
 
     xtoy = (): void => {
         if (checkForError()) {
@@ -77,7 +73,6 @@ export class secondFunService {
         }
     }
 
-    /*****************************************************************square and cube************************/
     sqr = (): void => {
         if (checkForError()) {
             if (_sqr.innerHTML == XCUBE) {
@@ -89,5 +84,4 @@ export class secondFunService {
             dis.value = Math.pow(eval(dis.value), 2).toString();
         }
     }
-
 }

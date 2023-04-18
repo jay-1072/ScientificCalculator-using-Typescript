@@ -39,7 +39,6 @@ export class secondFunService {
                 }
             }
         };
-        /*****************************************************************10^x and 2^x ************************/
         this.tentox = () => {
             if (checkForError()) {
                 if (_tenpow.innerHTML == TENTOX) {
@@ -52,7 +51,6 @@ export class secondFunService {
                 }
             }
         };
-        /*****************************************************************10^x and 2^x ************************/
         this.xtoy = () => {
             if (checkForError()) {
                 dis.value += _xtoy.innerHTML == 'x<sup>y</sup>' ? '^' : (" " + YROOT + " ");
@@ -70,7 +68,6 @@ export class secondFunService {
                 }
             }
         };
-        /*****************************************************************square and cube************************/
         this.sqr = () => {
             if (checkForError()) {
                 if (_sqr.innerHTML == XCUBE) {
